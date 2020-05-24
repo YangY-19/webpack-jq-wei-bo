@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+</head>
+<body>
+    <div>
+        <header id="header"></header>
+        <div class="home-box">
+            discover
+        </div>
+        <footer id="footer"></footer>
+    </div>
+    <script src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
+    <script src="./index.js"></script>
+    <script>
+        $("#header").load("/header.html");
+        $("#footer").load("/footer.html");
+    </script>
+</body>
+</html>

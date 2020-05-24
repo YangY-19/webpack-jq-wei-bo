@@ -1,0 +1,23 @@
+{
+    "presets": [
+        [
+            "@babel/preset-env",
+            {
+                "useBuiltIns": "usage", //按需引用, 引用es6更高级的语法
+                "corejs": 3
+            }
+        ]
+    ],
+    "plugins": [
+        [
+            "@babel/plugin-transform-runtime",// "dependencies" 里安装  @babel/polyfill,  devDependencies里安装@babel/plugin-transform-runtime
+            {
+                "absoluteRuntime": false,
+                "corejs": 3,
+                "helpers": true,
+                "regenerator": true,
+                "useESModules": false
+            }
+        ]
+    ]
+}

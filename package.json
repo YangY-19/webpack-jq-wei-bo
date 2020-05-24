@@ -1,0 +1,60 @@
+{
+  "name": "weibo",
+  "version": "0.0.1",
+  "description": "一个社交网站",
+  "main": "index.js",
+  "author": "YangY",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "webpack-dev-server --config config/webpack.dev.js",
+    "build": "webpack --config config/webpack.prod.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/plugin-transform-runtime": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "@babel/runtime-corejs3": "^7.9.6",
+    "autoprefixer": "^9.8.0",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.5.3",
+    "eslint": "^7.0.0",
+    "eslint-loader": "^4.0.2",
+    "file-loader": "^6.0.0",
+    "glob": "^7.1.6",
+    "happypack": "^5.0.1",
+    "html-loader": "^1.1.0",
+    "html-webpack-plugin": "^4.3.0",
+    "html-withimg-loader": "^0.1.16",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.14.1",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^8.0.2",
+    "sass-resources-loader": "^2.0.3",
+    "style-loader": "^1.2.1",
+    "terser-webpack-plugin": "^3.0.1",
+    "url-loader": "^4.1.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^4.2.2",
+    "webpack-parallel-uglify-plugin": "^1.1.2"
+  },
+  "browserslist": [
+    "defaults",
+    "not ie < 11",
+    "last 2 versions",
+    "> 1%",
+    "iOS 7",
+    "last 3 iOS versions"
+  ],
+  "dependencies": {
+    "axios": "^0.19.2",
+    "core-js": "^3.6.5",
+    "jquery": "^3.5.1",
+    "layui-src": "^2.5.5"
+  }
+}

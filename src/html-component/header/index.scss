@@ -1,0 +1,61 @@
+.header-bg{
+    background-color: #ffffff;
+    height: 50px;
+    border-top: 2px solid rgb(238, 153, 43);
+    display: flex;
+    justify-content: center;
+    .header-box{
+        width: 1200px;
+        display: flex;
+        .logo {
+            img {
+                height: 50px;
+            }
+        }
+        .header-input{
+            display: flex;
+            width: 38%;
+            height: 34px;
+            margin:  8px 20px;
+            align-items: center;
+            position: relative;
+            input {
+                height: 100%;
+            }
+            .layui-icon-search {
+                position: absolute;
+                right: 14px;
+            }
+        }
+        .header-nav{
+            display: flex;
+            align-items: center;
+            flex: 1;
+            nav {
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                li {
+                    display: flex;
+                    line-height: 50px;
+                    cursor:pointer;
+                    p {
+                        margin-left: 3px;
+                    }
+                }
+            }
+        }
+    }
+
+    .userInfo{
+        display: none;
+    }
+}
+
+.wire{
+    width: 1px;
+    height: 30px;
+    background-color: #cccccc;
+    margin-top: 10px;
+}
+

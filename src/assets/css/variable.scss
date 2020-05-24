@@ -1,0 +1,17 @@
+
+$mainColor: rgb(238, 153, 43);
+
+@mixin btnStyle($width:auto, $height: auto, $bgColor: $mainColor, $radius: 4px, $color: #ffffff, $margin: 0px) {
+    width: $width;
+    height: $height;
+    background: $bgColor;
+    border: 1px solid $bgColor;
+    border-radius: $radius;
+    color: $color;
+    margin: $margin;
+    &:hover {
+      background: $bgColor;
+      border: 1px solid $bgColor;
+      border-radius: $radius;
+    }
+  }
