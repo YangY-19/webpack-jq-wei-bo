@@ -85,7 +85,7 @@ module.exports = smart(webpackCommon, {
         // 设置代理
         proxy: {
             '/weibo':{
-                target: "http://192.168.0.3:8088",
+                target: "http://192.168.20.116:8088",
                 changeOrigin: true,
                 secure: false, 
             }
