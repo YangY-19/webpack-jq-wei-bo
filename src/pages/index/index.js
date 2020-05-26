@@ -15,7 +15,7 @@ layui.config({
         let { blogList } = result.data
         for (let index = 0; index < blogList.length; index++) {
             const item = blogList[index];
-            let html = `<div class="home-list-item" id="list">
+            let html = `<li class="home-list-item" id="list-item">
                             <div class="item-user-info" >
                                 <div class="user-info">
                                     <img src=${item.user.picture}>
@@ -24,7 +24,7 @@ layui.config({
                                         <div class="add-time-info">${item.city ? `来着 ${item.city}` : '保密' }</div>
                                     </div>
                                 </div>
-                                <div class="more" data-index=${index}>
+                                <div class="more" id="mored">
                                     <i class=" layui-icon layui-icon-down"></i>
                                     <div class="more-list">
                                         <ul>
@@ -40,7 +40,7 @@ layui.config({
                                 </article>
                                 <div class="img-box"></div>
                             </div>
-                        </div>`
+                        </li>`
             
             $('.home-list').animate({opacity:1}).append(html)
             if (item.images) {
@@ -77,12 +77,13 @@ layui.config({
             }
         })
     })
-
+ 
 
     //点击more
-    $("#list").click(function(){
+    $("list2 li").click(function(){
       const index = $(this).index()
-      const index3 = $('this').find('.more').eq(1).show()
+      const index3 =  $(this).find('#list-item').eq(index).prevObject
+    //   .find('.more-list').show()
       debugger
     });
 // });

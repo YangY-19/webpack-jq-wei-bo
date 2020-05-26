@@ -18,9 +18,7 @@
         }
         .home-list{
           width: 580px;
-          height: 100%;
-          position: relative;
-          padding-bottom: 30px;
+          height: 96%;
           .home-list-item{
             width: 100%;
             min-height: 120px;
@@ -105,12 +103,11 @@
                 }
             }
           }
-          .load-more {
-              position: absolute;
-              bottom: 0px;
-              left: 50%;
-              color: rgb(3, 54, 88);
-          }
+        }
+        .load-more {
+            display: flex;
+            justify-content: center;
+            color: rgb(3, 54, 88);
         }
         .home-user {
             width: 250px;
