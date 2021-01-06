@@ -52,7 +52,7 @@
     "last 3 iOS versions"
   ],
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "core-js": "^3.6.5",
     "jquery": "^3.5.1",
     "layui-src": "^2.5.5"
